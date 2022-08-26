@@ -26,23 +26,8 @@ function About() {
   
   return (
     <div id="owner">
-      <div id='landingContainer' className=' g '>
-        <div id="taker" className='row'>
-        <div id="circles" className='col'>
-            <div id="one">
-
-            </div>
-            <div id="two">
-
-            </div>
-            <div id="three">
-
-            </div>
-            <div id="four">
-
-            </div>
-        </div>
-        <div id="home" className=' h col'>
+      <div id='landingContainer' className=' container-fluid '>
+        <div id="home" className='row'>
             <div id="about">
               <div id="abouttitle">
                 About Me
@@ -82,7 +67,6 @@ function About() {
             </div>
         </div>
         </div>
-    </div>
     </div>
   )
 }

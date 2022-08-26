@@ -1,0 +1,85 @@
+#about{
+    padding: 3rem;
+    #abouttitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-family: 'Allerta Stencil', sans-serif;
+    }
+    #aboutContent{
+        #aboutText{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: .8rem;
+            flex-direction: column;
+            // border: 2px solid red;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            #aboutMe{
+                h4{
+                    font-size: 1rem;
+                    line-height: 1.3rem;
+                }
+                #skils{
+                    margin-top: .8rem;
+                    h3{
+                        text-decoration: underline;
+                    }
+                    #all{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        div{
+                            // width: fit-content;
+                            padding: .5rem;
+                            border: 1.35px solid $fourty;
+                            border-radius: 50px;
+                            margin: .3rem .3rem .2rem .1rem;
+                            background: rgba(114, 147, 160, 0.326);
+    
+                        }
+                    }
+                }
+                #resume{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-top: .8rem;
+                    a{
+                        margin-top: .1rem;
+                        width: 10rem;
+                        height: 2.3rem;
+                        border: 2px solid $fourty;
+                        border-radius: 50px;
+                        background: $fourty;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $sixty;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        #aboutImage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            #imageHolder{
+                background: url(../Images/3CcDjIXx.png);
+                width: 20rem;
+                height: 20rem;
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                border: 10px solid $sixty
+            }
+        }
+    }
+}

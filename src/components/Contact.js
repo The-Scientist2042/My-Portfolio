@@ -32,23 +32,8 @@ function Contact() {
   return (
     <div>
       <div id="owner">
-      <div id='landingContainer'>
-        <div id="taker">
-          <div id="circles">
-              <div id="one">
-
-              </div>
-              <div id="two">
-
-              </div>
-              <div id="three">
-
-              </div>
-              <div id="four">
-
-              </div>
-          </div>
-          <div id="home">
+      <div id='landingContainer' className='container-fluid'>
+          <div id="home" className='row'>
           <div id="contact" className='row'>
             <div className='col' id="conimg">
               <div id="conimage">
@@ -83,22 +68,25 @@ function Contact() {
                     <button
                     onClick={sendEmail}
                     >
-                        Sign Up
+                        Contact Me
                     </button>
                 </div>
               </form>
               <div className='row' id="socials">
-                <a href="https://www.instagram.com/e._lyon/"><i className="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/Darkonethesixth"><i className="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/elyon-omidiora-657a89248/"><i className="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/The-Scientist2042"><i className="fa-brands fa-github"></i></a>
+                <a rel="noreferrer noopener" target="_blank" href="https://www.instagram.com/e._lyon/"><i className="fa-brands fa-instagram"></i></a>
+                <a rel="noreferrer noopener" target="_blank" href="https://twitter.com/Darkonethesixth"><i className="fa-brands fa-twitter"></i></a>
+                <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/elyon-omidiora-657a89248/"><i className="fa-brands fa-linkedin-in"></i></a>
+                <a rel="noreferrer noopener" target="_blank" href="https://github.com/The-Scientist2042"><i className="fa-brands fa-github"></i></a>
               </div>
-               <h3>itiselyon@gmail.com</h3>
+               <h3>
+                <a rel="noreferrer noopener" target="_blank" href="http://itiselyon@gmail.com">
+                itiselyon@gmail.com
+                </a>
+               </h3>
             </div>
           </div>
           </div>
         </div>
-    </div>
     </div>
     </div>
   )

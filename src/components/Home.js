@@ -64,7 +64,7 @@ function Home() {
                             Omidiora Elyon
                         </h1>
                         <h2 className="col-12" id='lg4'>
-                            Self-Taught Front End Web Developer
+                            Self-Taught Front End React Developer
                         </h2>
                         <div className="col-12" id='lg5'>
                             <div className="col" id='lg6'>
