@@ -1,0 +1,268 @@
+#owner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction: column;
+    width: 100%;
+    #landingContainer{
+        width: 100%;
+        background: linear-gradient(to bottom right, #292d2e, #FFB8D1 );
+        // background: blue;
+        min-height: 150vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        // z-index: -1;
+        // border: 2px solid red
+        #taker{
+            // border: 2px solid red;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            #circles{
+                // border: 2px solid blue;
+                width: 100%;
+                display: flex;
+                position: relative;
+                // border: 5px solid red;
+                min-height: 100vh;
+                // overflow: hidden;
+                #one{
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                    background: $sixty;
+                    position: absolute;
+                    top: 1%;
+                    left: 1%;
+                    opacity: .7;
+                    animation: one 120s infinite ease-in-out;
+                    filter: blur(.3rem);
+                    @keyframes one {
+                        0%{
+                            top: 1%;
+                            left: 1%;
+                        }
+                        32%{
+                            top: 29%;
+                            left: 62%;
+                        }
+                        40%{
+                            top: 42%;
+                            left: 12%;
+                        }
+                        69%{
+                            top: 64%;
+                            left: 32%;
+                        }
+                        100%{
+                            top: 1%;
+                            left: 1%;
+                        }
+                    }
+                }
+                #two{
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                    background: #9AD1D4;
+                    position: absolute;
+                    top: 90%;
+                    left: 15%;
+                    opacity: .7;
+                    filter: blur(.3rem);
+                    animation: two 180s infinite ease-in-out;
+                    @keyframes two {
+                        0%{
+                            top: 90%;
+                            left: 15%;
+                        }
+                        30%{
+                            top: 29%;
+                            left: 12%;
+                        }
+                        55%{
+                            top: 82%;
+                            left: 82%;
+                        }
+                        7%{
+                            top: 24%;
+                            left: 32%;
+                        }
+                        100%{
+                            top: 90%;
+                            left: 15%;
+                        }
+                    }
+                }
+                #three{
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                    background: $fourty;
+                    opacity: .7;
+                    filter: blur(.3rem);
+                    position: absolute;
+                    top: 5%;
+                    left: 90%;
+                    animation: three 120s infinite ease-in-out;
+                    @keyframes three {
+                        0%{
+                            top: 5%;
+                            left: 90%;
+                        }
+                        25%{
+                            top: 79%;
+                            left: 12%;
+                        }
+                        50%{
+                            top: 42%;
+                            left: 52%;
+                        }
+                        75%{
+                            top: 54%;
+                            left: 32%;
+                        }
+                        100%{
+                            top: 5%;
+                            left: 90%;
+                        }
+                    }
+                }
+                #four{
+                    width: 6rem;
+                    height: 6rem;
+                    border-radius: 50%;
+                    background: #5AA9E6;
+                    position: absolute;
+                    opacity: .7;
+                    top: 45%;
+                    left: 65%;
+                    animation: four 120s infinite ease-in-out;
+                    filter: blur(.3rem);
+                    @keyframes four {
+                        0%{
+                            top: 45%;
+                            left: 65%;
+                        }
+                        35%{
+                            top: 9%;
+                            left: 12%;
+                        }
+                        50%{
+                            top: 72%;
+                            left: 12%;
+                        }
+                        65%{
+                            top: 64%;
+                            left: 72%;
+                        }
+                        100%{
+                            top: 45%;
+                            left: 65%;
+                        }
+                    }
+                }
+                
+            }
+            #home{
+                // position: fixed;
+                border: 1px solid $sixty;
+                // border: 2px solid red;
+                border-radius: 20px;
+                // top: 0;
+                width: 85%;
+                min-height: 85vh;
+                position: absolute;
+                // z-index: 2;
+                background: rgba(114, 147, 160, 0.2);
+                box-shadow: 0 8px 32px 0 rgba(114, 147, 160, 0.29);
+                backdrop-filter: blur( 12px );
+                color: $fourty;
+                #proj{
+                    padding: 1rem;
+                    #tit{
+                        font-size: 3rem;
+                        font-family: 'Allerta Stencil', sans-serif;
+                        text-align: center;
+                        margin-bottom: 1rem;
+                    }
+                    #work1{
+                        // width: 100%;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        border: 2px dashed $fourty;
+                        border-radius: 10px;
+                        padding: 1rem;
+                        // border: 2px solid red;
+                        #work1img{
+                            background: url(./meme.png);
+                            background-size: cover;
+                            // background-position: center;
+                            background-repeat: no-repeat;
+                            width: 40%;
+                            height: 15rem;
+                            border-radius: 10px;
+                        }
+                        #work1des{
+                            margin-top: 1rem;
+                            #work1text{
+                                width: 60%;
+                            }
+                            a{
+                                color: darkblue;
+                                
+                            }
+                        }
+                    }
+                    #work2{
+                        margin-top: 1.3rem;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        border: 2px dashed $fourty;
+                        border-radius: 10px;
+                        padding: 1rem;
+                        #work2img{
+                            background: url(./Screenshot\ 2022-08-23\ 224052.png);
+                            background-size: cover;
+                            // background-attachment: fixed;
+                            // background-position: center;
+                            background-repeat: no-repeat;
+                            width: 40%;
+                            height: 15rem;
+                            border-radius: 10px;
+                        }
+                        #work2des{
+                            margin-top: 1rem;
+                            #work2text{
+                                width: 60%;
+                            }
+                            a{
+                                color: darkblue;
+                                
+                            }
+                        }
+                    }
+                    #git{
+                        margin-top: 1rem;
+                        font-size: 1.4rem;
+                        font-family: 'Allerta Stencil', sans-serif;
+                        a{
+                            color: darkblue;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
