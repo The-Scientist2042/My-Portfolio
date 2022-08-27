@@ -5,6 +5,16 @@
   box-sizing: border-box;
   font-family: "Laila", sans-serif;
 }
+* ::-webkit-scrollbar {
+  width: 6px;
+}
+* ::-webkit-scrollbar-track {
+  background: #7293A0;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #FFB8D1;
+  border-radius: 1000px;
+}
 
 #owner {
   display: flex;
@@ -160,6 +170,7 @@
 }
 #homepage #holder #landingGlass #lg1 #lg5 #lg6 button:hover {
   border: none;
+  color: #7293A0;
 }
 #homepage #holder #landingGlass #lg1 #lg5 #lg6 button:hover a {
   color: #7293A0;
@@ -205,6 +216,7 @@
   z-index: -1;
 }
 #homepage #holder #landingGlass #lg1 #lg5 #lg7 button:hover {
+  color: #7293A0;
   border: none;
 }
 #homepage #holder #landingGlass #lg1 #lg5 #lg7 button:hover a button {
@@ -333,6 +345,7 @@
   font-family: "Allerta Stencil", sans-serif;
 }
 #homepage #fullNavigation #contactNav {
+  margin-bottom: 2.3rem;
   width: 100%;
   height: 25%;
   display: flex;
@@ -439,6 +452,60 @@
   background-size: cover;
   border-radius: 50%;
   border: 10px solid #7293A0;
+}
+
+#proj {
+  padding: 1.5rem;
+}
+#proj #projTitle {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#proj #projTitle h2 {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+#proj #manager {
+  margin-bottom: 2rem;
+}
+#proj #manager #image--manager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+  background: rgba(114, 147, 160, 0.2078431373);
+  border-radius: 10px;
+  border: 4px solid #7293A0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#proj #manager #image--manager #projectImg {
+  width: 95%;
+  height: 10rem;
+  border-radius: 10px;
+}
+#proj #manager #progressName {
+  margin-top: 0.4rem;
+}
+#proj #manager #progressName h2 {
+  font-family: "Allerta Stencil", sans-serif;
+}
+#proj #manager #liveLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#proj #manager #liveLink a {
+  background: rgba(255, 184, 209, 0.2980392157);
+  border: 1px solid #7293A0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 20px;
+  color: darkblue;
+  font-family: "Allerta Stencil", sans-serif;
 }
 
 #contact {

@@ -18,11 +18,11 @@ function Home() {
         () => {
             const tl = gsap.timeline();
             tl.from('#home',{opacity:0, duration:.8, x:60})
-            tl.from('#b1',{opacity:0, duration:.8, y:-30})
-            tl.from('#lg2',{opacity:0, duration:.8, x:-60})
-            tl.from('#lg3',{opacity:0, duration:.8, x:-60})
-            tl.from('#lg4',{opacity:0, duration:.8, x:-60})
-            tl.from('#landingImage',{opacity:0, duration:.8, x:60})
+            tl.from('#b1',{opacity:0, duration:.8, y:30})
+            tl.from('#landingImage',{opacity:0, duration:.8, x:-60})
+            tl.from('#lg2',{opacity:0, duration:.8, x:60})
+            tl.from('#lg3',{opacity:0, duration:.8, x:60})
+            tl.from('#lg4',{opacity:0, duration:.8, x:60})
             tl.from('#lg6',{opacity:0, duration:.8, y:-60})
             tl.from('#lg7',{opacity:0, duration:.8, y:-60})
         },[]
@@ -56,7 +56,7 @@ function Home() {
             </div>
             {check === true ?<div id="holder">
                 <div className="row" id='landingGlass'>
-                    <div className="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6" id='lg1'>
+                    <div className="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 order-2" id='lg1'>
                         <h2 className="col-12" id='lg2'>
                             Hello, I'm,
                         </h2>
@@ -64,11 +64,10 @@ function Home() {
                             Omidiora Elyon
                         </h1>
                         <h2 className="col-12" id='lg4'>
-                            Self-Taught Front End React Developer
+                            Self-Taught React Developer
                         </h2>
                         <div className="col-12" id='lg5'>
                             <div className="col" id='lg6'>
-                                <button>
                                     <Link
                                     to='/about'
                                     >
@@ -76,10 +75,8 @@ function Home() {
                                             About Me
                                         </button>
                                     </Link>   
-                                </button>
                             </div>
                             <div className="col" id='lg7'>
-                                <button>
                                     <Link
                                     to='/project'
                                     >
@@ -87,11 +84,10 @@ function Home() {
                                         Projects
                                         </button>
                                     </Link>
-                                </button>
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 " id='land'>
+                    <div className="col-12 col-sm-12 col-lg-6 col-xl-6 col-xxl-6 order-1" id='land'>
                         <div>
                             <div id='landingImage' className="col">
                             
@@ -102,7 +98,14 @@ function Home() {
             </div> 
             :
             <div id='fullNavigation'>
-                <div id='homeNav' >
+                <div 
+                id='homeNav'
+                onClick={
+                    () => {
+                        dispatch(opposite())
+                    }
+                }
+                >
                     <Link
                     to='/'
                     >

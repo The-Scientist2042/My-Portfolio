@@ -7,6 +7,16 @@ $sixty:#7293A0;
     box-sizing: border-box;
     font-family: 'Laila', sans-serif;
     // overflow: hidden;
+    ::-webkit-scrollbar{
+        width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        background: $sixty;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $fourty;
+        border-radius: 1000px;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Laila:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
