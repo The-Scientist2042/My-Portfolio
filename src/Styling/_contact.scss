@@ -99,6 +99,9 @@
                     border: 2px solid $sixty;
                     border-bottom-right-radius: 20px;
                     color: $fourty;
+                    &:focus{
+                        outline: none;
+                    }
                 }
             }
         }

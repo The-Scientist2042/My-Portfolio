@@ -646,6 +646,9 @@
   border-bottom-right-radius: 20px;
   color: #FFB8D1;
 }
+#contact #conform #form--row #form--fourth--col button:focus {
+  outline: none;
+}
 #contact #conform #socials {
   margin-top: 1.5rem;
   display: flex;
