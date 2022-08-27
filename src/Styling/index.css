@@ -485,7 +485,7 @@
 }
 #proj #manager #image--manager #projectImg {
   width: 95%;
-  height: 10rem;
+  min-height: 10rem;
   border-radius: 10px;
 }
 #proj #manager #progressName {

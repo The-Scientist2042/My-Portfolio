@@ -15,7 +15,7 @@ function Project() {
   const Projects = data.map(
     (progress) => {
       return(
-        <div id="manager" className='col-12 col-sm-12 col-lg-4 col-xl-3 col-xxl-3'>
+        <div id="manager" className='col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-3'>
           <div id="image--manager">
             <img id='projectImg' src={progress.image} alt="" />
           </div>
