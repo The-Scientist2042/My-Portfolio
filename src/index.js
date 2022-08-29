@@ -9,12 +9,14 @@ import Contact from './components/Contact';
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import nav from './Utilities/NavReducer'
+import con from './Utilities/contactApproved'
 
 function Index(){
      const store = configureStore(
         {
             reducer:{
-                navigation:nav
+                navigation:nav,
+                contat:con
             }
         }
      )

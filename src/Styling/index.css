@@ -677,4 +677,123 @@
 #contact #conform h3 a {
   color: darkblue;
   font-family: "Allerta Stencil", sans-serif;
+}
+#contact #hal1 {
+  transition: all 1s ease-in-out;
+}
+#contact #hal1 #appear {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  width: 50%;
+  border: 5px solid #7293A0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(114, 147, 160, 0.591);
+  opacity: 1;
+}
+#contact #hal1 #appear #holdma {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+  position: relative;
+}
+#contact #hal1 #appear #holdma #cir {
+  border: 5px solid #FFB8D1;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact #hal1 #appear #holdma #cir h1 {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 3rem;
+}
+#contact #hal1 #appear #holdma button {
+  position: absolute;
+  cursor: pointer;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 3px solid #FFB8D1;
+  background: rgba(114, 147, 160, 0.591);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact #hal1 #appear #holdma button:focus {
+  outline: none;
+}
+#contact #hal1 #appear #holdma button i {
+  font-size: 2rem;
+  color: #FFB8D1;
+}
+#contact #hal2 {
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
+#contact #hal2 #appear {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  width: 50%;
+  border: 5px solid #7293A0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(114, 147, 160, 0.591);
+  opacity: 0;
+}
+#contact #hal2 #appear #holdma {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 0;
+  position: relative;
+}
+#contact #hal2 #appear #holdma #cir {
+  border: 5px solid #FFB8D1;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact #hal2 #appear #holdma #cir h1 {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 3rem;
+}
+#contact #hal2 #appear #holdma button {
+  position: absolute;
+  cursor: pointer;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 3px solid #FFB8D1;
+  background: rgba(114, 147, 160, 0.591);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact #hal2 #appear #holdma button:focus {
+  outline: none;
+}
+#contact #hal2 #appear #holdma button i {
+  font-size: 2rem;
+  color: #FFB8D1;
 }/*# sourceMappingURL=index.css.map */

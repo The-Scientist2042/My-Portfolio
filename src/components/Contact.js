@@ -2,9 +2,19 @@ import React from 'react'
 import { useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import gsap from 'gsap';
+import { useDispatch, useSelector } from 'react-redux';
+import { ops } from '../Utilities/contactApproved'
 
 
 function Contact() {
+  const dispatch = useDispatch()
+  const checke = useSelector(
+    (state) => {
+        return(
+            state.contat.value
+        )
+    }
+)
 
   useEffect(
     () =>{
@@ -17,6 +27,7 @@ function Contact() {
   const form = useRef()
     
     const sendEmail = (event) => {
+      dispatch(ops())
         event.preventDefault();
         emailjs
         .sendForm('service_rg8jp3j', 'template_en49vz6', form.current , 'x2Sry9pgMsRig8_82')
@@ -84,7 +95,24 @@ function Contact() {
                 </a>
                </h3>
             </div>
+            <div id={checke}>
+            <div id="appear">
+            <div id="holdma">
+            <div id="cir">
+              <h1>
+                SENT  
+              </h1>
+            </div>
+            <button id="exc" onClick={() => {
+              dispatch(ops())
+            }}>
+            <i class="fa-solid fa-xmark"></i>
+            </button>
+            </div>
           </div>
+            </div>
+          </div>
+          
           </div>
         </div>
     </div>
